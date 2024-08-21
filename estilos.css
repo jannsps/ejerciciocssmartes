@@ -1,0 +1,96 @@
+.container{
+    display: flex;
+    flex-direction: row;/*fila o columna*/
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 300px;
+    border: 2px solid blue;
+    flex-wrap: wrap;
+}
+.container div{
+    min-width: 100px;
+}
+.container-card{
+    width: 300px;
+}
+.card{
+    width: auto;
+    border: 3px solid darkblue;
+    margin: 10px;
+    padding: 3px;
+    -webkit-box-shadow: 40px 18px 16px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 40px 18px 16px -7px rgba(0,0,0,0.75);
+    box-shadow: 40px 18px 16px -7px rgba(0,0,0,0.75);
+}
+img{
+    width: 100%;
+}
+.card-titulo,.card-subtitulo{
+    text-align: center;
+}
+.card-body{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+.elemento1{
+    background-color: blue;
+}
+.elemento2{
+    background-color: yellow;
+}
+.elemento3{
+    background-color: green;
+}
+.elemento4{
+    background-color: red;
+}
+.elemento5{
+    background-color: blueviolet;
+}
+.elemento6{
+    background-color: brown;
+}
+.elemento7{
+    background-color: chartreuse;
+}
+.elemento8{
+    background-color: darkkhaki;
+}
+.elemento9{
+    background-color: aqua;
+}
+@media screen and (max-width: 480px){
+    .container{
+        display: flex;
+        flex-direction: column;/*fila o columna*/
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
+        border: 2px solid blue;
+        flex-wrap: wrap;
+    }
+    .container div{
+        min-width: 200px;
+        text-align: center;
+    }
+    .elemento1{
+        background-color: blue;
+        display: none;
+    }
+    .elemento9{
+        background-color: blue;
+    }
+    
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;/*fila o columna*/
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 300px;
+        border: 2px solid blue;
+        flex-wrap: wrap;
+    }
+}
